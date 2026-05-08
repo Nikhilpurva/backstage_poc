@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: nikhil-test
+  description: ECS Cluster - nikhil-test
+  tags:
+    - aws
+    - ecs
+    - terraform
+    - dev
+  annotations:
+    aws.amazon.com/ecs-cluster-name: nikhil-test
+    aws.amazon.com/region: us-east-1
+spec:
+  type: ecs-cluster
+  owner: user:guest
+  lifecycle: dev
+  system: infrastructure
